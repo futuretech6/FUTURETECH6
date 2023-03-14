@@ -27,7 +27,7 @@ jobs:
 
           # Options
           user: futuretech6
-          template: classic
+          template: terminal
           base: header, activity, community, repositories, metadata
           base_indepth: yes
           config_octicon: yes
@@ -44,11 +44,13 @@ jobs:
           plugin_languages_analysis_timeout_repositories: 7.5
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
+          plugin_languages_ignored: jupyter notebook, html, tsql, css, scss
           plugin_languages_limit: 8
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 14
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
+          plugin_languages_skipped: github-readme-stats, CA_LAB
           plugin_languages_threshold: 0%
           plugin_lines: yes
           plugin_lines_history_limit: 1
@@ -63,12 +65,11 @@ jobs:
           plugin_stargazers: yes
           plugin_stargazers_charts: yes
           plugin_stargazers_charts_type: classic
-          plugin_stargazers_worldmap: yes
           plugin_traffic: yes
           plugin_wakatime: yes
           plugin_wakatime_days: 7
           plugin_wakatime_limit: 5
           plugin_wakatime_repositories_visibility: all
-          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          plugin_wakatime_sections: time, languages, languages-graphs
           plugin_wakatime_url: https://wakatime.com
           plugin_wakatime_user: futuretech6
